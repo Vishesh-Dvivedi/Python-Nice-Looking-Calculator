@@ -102,6 +102,8 @@ class Calculator(Tk):
 
     def print_result(self):
         expression = self.output_entry.get()
+        if expression not in ['+', '-', 'X', '/']:
+            return 0
         self.output_entry.configure(state=NORMAL)
         self.output_entry.delete(0, len(expression))
         output = ''
