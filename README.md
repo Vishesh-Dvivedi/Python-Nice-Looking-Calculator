@@ -3,19 +3,19 @@ A nice looking python calculator app made from tkinter
 
 ## Features
 ### 1. Nice looking color interface
-=> It has a nice color interface giving a light and unique look
-=> In future I will add multiple themes and ability to change between them
-=> For now, anyone can download the files and change colors by changing values of "OUTPUT_BG" and "BUTTON_BG" from main.py code
+=> It has a nice color interface giving a light and unique look\
+=> In future I will add multiple themes and ability to change between them\
+=> For now, anyone can download the files and change colors by changing values of "OUTPUT_BG" and "BUTTON_BG" from main.py code\
 
 ### 2. Button and Textbox ratio is maintained
-=> All the buttons acquire 3/4th and textbox acquires 1/4 of total window size
-=> The ratio reamins constant irrespective of the size of the window
-=> The window can be resized easily while maintaining above ratio
+=> All the buttons acquire 3/4th and textbox acquires 1/4 of total window size\
+=> The ratio reamins constant irrespective of the size of the window\
+=> The window can be resized easily while maintaining above ratio\
 
 ### 3. Keyboard binding
-=> Apart from clicking buttons to enter numbers and operators (ex "+", "-" etc..), keyboard binding is also implemented
-=> User can enter values by using keyboard bindings alone
-=> keyboard bindings are as follows:-
+=> Apart from clicking buttons to enter numbers and operators (ex "+", "-" etc..), keyboard binding is also implemented\
+=> User can enter values by using keyboard bindings alone\
+=> keyboard bindings are as follows:
   1. Number keys - from 0 to 9
   2. Operator keys:
      1. "+" key for addition
@@ -28,8 +28,8 @@ A nice looking python calculator app made from tkinter
      8. "escape" key to exit program
 
 ### 4. Object Oriented Programming implemented
-=> The main.py file contains a class for Calculator app
-=> If someone wants to integrate a calculator in their tkinter app, they can directly get the file and import the class for ease of use
+=> The main.py file contains a class for Calculator app\
+=> If someone wants to integrate a calculator in their tkinter app, they can directly get the file and import the class for ease of us\
 
 
 ## Screenshots
