@@ -4,7 +4,9 @@ A nice looking python calculator app made from tkinter
 ## Features
 ### 1. Nice looking color interface
 => It has a nice color interface giving a light and unique look\
-=> In future I will add multiple themes and ability to change between them\
+=> It consists of 4 themes: 'Light', 'Dark', 'Default', and 'Default-opposite'\
+=> User can start the calculator by giving appropriate command
+`python main.py -t light`
 => For now, anyone can download the files and change colors by changing values of "OUTPUT_BG" and "BUTTON_BG" from main.py code
 
 ### 2. Button and Textbox ratio is maintained
