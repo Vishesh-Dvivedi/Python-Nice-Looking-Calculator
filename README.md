@@ -28,6 +28,7 @@ A nice looking python calculator app made from tkinter
      6. "backspace" key to delete single character
      7. "delete" key to clear textbox
      8. "escape" key to exit program
+     8. "control-c" key to copy number to clipboard
 
 ### 4. Object Oriented Programming implemented
 => The main.py file contains a class for Calculator app\

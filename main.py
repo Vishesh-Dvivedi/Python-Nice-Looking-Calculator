@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import messagebox
 from functools import partial
 import time
 import os
@@ -49,6 +50,16 @@ class Calculator(Tk):
         self.bind("<Key-BackSpace>", self.backspace)
         self.bind("<Key-Delete>", self.delete)
         self.bind("<Key-Escape>", exit)
+        self.bind("<Control-c>", self.copy_to_clipboard)
+
+    def copy_to_clipboard(self, event):
+        self.output_entry.configure(state=NORMAL)
+        text = self.output_entry.get()
+        if text != "" or text != None:
+            self.clipboard_clear()
+            self.clipboard_append(text)
+        self.output_entry.configure(state=DISABLED)
+        messagebox.showinfo("Information", "Number copied to clipboard")
 
     def backspace(self, event):
         self.output_entry.configure(state=NORMAL)
