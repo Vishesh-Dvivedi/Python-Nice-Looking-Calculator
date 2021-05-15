@@ -126,7 +126,7 @@ class Calculator(Tk):
         self.output_entry.delete(0, len(expression))
         output = ''
         nums = []
-        self.output_entry.insert(END, str(eval(str(expression))) )
+        self.output_entry.insert(END, str(eval(str(expression.replace("x", "*")))) )
         
         self.output_entry.configure(state=DISABLED)
 
