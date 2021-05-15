@@ -126,42 +126,7 @@ class Calculator(Tk):
         self.output_entry.delete(0, len(expression))
         output = ''
         nums = []
-        if "+" in expression:
-            nums = expression.split('+')
-            try:
-                num1 = int(nums[0])
-                num2 = int(nums[1])
-            except:
-                num1 = float(nums[0])
-                num2 = float(nums[1])
-            self.output_entry.insert(END, str( self.sum( num1, num2) ) )
-        elif "-" in expression:
-            nums = expression.split("-")
-            try:
-                num1 = int(nums[0])
-                num2 = int(nums[1])
-            except:
-                num1 = float(nums[0])
-                num2 = float(nums[1])
-            self.output_entry.insert(END,  str( self.subtract( num1, num2) ) ) 
-        elif "x" in expression:
-            nums = expression.split("x")
-            try:
-                num1 = int(nums[0])
-                num2 = int(nums[1])
-            except:
-                num1 = float(nums[0])
-                num2 = float(nums[1])
-            self.output_entry.insert(END,  str( self.multiply( num1, num2 ) ) ) 
-        elif "/" in expression:
-            nums = expression.split("/")
-            try:
-                num1 = int(nums[0])
-                num2 = int(nums[1])
-            except:
-                num1 = float(nums[0])
-                num2 = float(nums[1])
-            self.output_entry.insert(END, str( self.divide( num1, num2 ) ) )
+        self.output_entry.insert(END, str(eval(str(expression))) )
         
         self.output_entry.configure(state=DISABLED)
 
